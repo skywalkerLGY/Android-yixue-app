@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pinyin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#83F0F7F7"
+        android:clickable="false"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:textColor="#00116E"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#62FFFFFF"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/lxr_id"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="陈"
+            android:textSize="8sp"
+            android:layout_gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingTop="9dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_image"
+            android:text="陈梓康"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp" />
+        <CheckBox
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/check_to_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginRight="26dp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

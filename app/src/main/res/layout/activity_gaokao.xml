@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".gaokaoActivity">
+
+
+        <com.example.curriculum_design.MyScrollView
+            android:id="@+id/scrollView"
+            android:background="@drawable/skyblue22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="-5dp"
+                    android:orientation="vertical">
+
+                        <ViewFlipper
+                            android:id="@+id/gaokao_scroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="172dp"
+                            android:flipInterval="3000"
+                            android:inAnimation="@anim/right_in"
+                            android:outAnimation="@anim/right_out" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+                                <ImageView
+
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/img_yuanxiao"
+                                    android:background="@drawable/school" />
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/img_zhuanye"
+                                    android:background="@drawable/boshi" />
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/img_zixun"
+                                            android:background="@drawable/yanjiangtai" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/img_zhiyuan"
+                                    android:background="@drawable/learn" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/img_chengji"
+                                    android:background="@drawable/schoolbag" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+
+                                    android:background="#2B2196F3"
+                                    android:gravity="center"
+                                    android:singleLine="false"
+                                    android:text="  院校  "
+                                    android:textStyle="bold"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+
+                                    android:singleLine="false"
+                                    android:background="#59CDF1A9"
+                                    android:textStyle="bold"
+                                    android:text="       专业  "/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+
+                                    android:singleLine="false"
+                                    android:background="#27FFE503"
+                                    android:textStyle="bold"
+                                    android:text="       咨询  "/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+
+                                    android:singleLine="false"
+                                    android:background="#1AFF3700"
+                                    android:textStyle="bold"
+                                    android:text="       志愿  "/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+
+                                    android:background="#169C27B0"
+                                    android:singleLine="false"
+                                    android:text="       政策  "
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:id="@+id/countdown_layout"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/foot"
+                            android:gravity="center" >
+
+                                <RelativeLayout
+                                    android:id="@+id/daojishi_rl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:gravity="center" >
+
+
+                                        <TextView
+                                            android:id="@+id/describe_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="5.0dip"
+                                            android:text="距离高考还有"
+                                            android:textSize="25sp" />
+
+                                        <TextView
+                                            android:id="@+id/days_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:padding="4dp"
+                                            android:layout_toRightOf="@+id/describe_tv"
+                                            android:background="#3100E2FF"
+                                            android:gravity="center"
+                                            android:text="10"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/colon0"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="5.0dip"
+                                            android:layout_marginRight="3.0dip"
+                                            android:layout_toRightOf="@+id/days_tv"
+                                            android:text="天"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/daojishi_rl"
+                                    android:gravity="center_horizontal" >
+
+                                        <TextView
+                                            android:id="@+id/hours_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@+id/colon1"
+                                            android:background="#3100E2FF"
+                                            android:gravity="center"
+                                            android:text="23"
+                                            android:padding="3dp"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/colon1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="3.0dip"
+                                            android:layout_marginRight="3.0dip"
+                                            android:layout_toLeftOf="@+id/minutes_tv"
+                                            android:text=":"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/minutes_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@+id/colon2"
+                                            android:background="#3100E2FF"
+                                            android:gravity="center"
+                                            android:text="59"
+                                            android:padding="3dp"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/colon2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="3.0dip"
+                                            android:layout_marginRight="3.0dip"
+                                            android:layout_toLeftOf="@+id/seconds_tv"
+                                            android:text=":"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/seconds_tv"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:background="#3100E2FF"
+                                            android:gravity="center"
+                                            android:text="59"
+                                            android:padding="3dp"
+                                            android:textSize="20sp" />
+                                </RelativeLayout>
+
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/ketangsuggest">
+
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/dakaigaokao"
+                                    android:layout_marginTop="-25dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:src="@drawable/gaokao_ad1" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="-25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:background="#00B0FF"
+                            android:orientation="vertical"
+                            android:padding="5dp" >
+
+
+                                <LinearLayout
+                                    android:id="@+id/show_pointer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center_horizontal"
+                                    >
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:elevation="20dp"
+                            android:id="@+id/gaokao_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/viewpager"
+                            android:gravity="center">
+
+
+                                <androidx.viewpager.widget.ViewPager
+                                    android:id="@+id/gaokao_viewPager"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:foregroundGravity="center" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/gaokao_dot_1"
+                                            android:layout_width="12dp"
+                                            android:layout_height="2dp"
+                                            android:layout_marginRight="5dp" />
+
+                                        <ImageView
+                                            android:id="@+id/gaokao_dot_2"
+                                            android:layout_width="12dp"
+                                            android:layout_height="2dp"
+                                            android:layout_margin="5dp" />
+                                </LinearLayout>
+
+                        </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/img_richeng"
+                            android:layout_above="@id/gaokaopage_webview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="250dp"
+                            android:src="@drawable/gaokao_time"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <WebView
+                                    android:id="@+id/gaokaopage_webview"
+                                    android:layout_alignParentBottom="true"
+
+                                    android:layout_marginTop="-150dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2000dp"
+                                    tools:ignore="WebViewLayout" />
+                        </RelativeLayout>
+                </LinearLayout>
+        </com.example.curriculum_design.MyScrollView>
+
+</RelativeLayout>

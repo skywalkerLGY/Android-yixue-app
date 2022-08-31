@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ballball">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                    点击屏幕任意位置\n  控制你的名字跳跃翻过障碍，触底则死\n         随着时间的增加,速度越来越快.\n
+             如果有任何bug请联系龚靖尧\n
+                   手机:18651700819\n
+                    QQ:2474590974"
+        android:textSize="30sp"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="返回"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="550dp"
+        android:background="@drawable/button"
+        android:onClick="btnclick3"/>
+</RelativeLayout>

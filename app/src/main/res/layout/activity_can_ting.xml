@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eat_CanTing.CanTing_Activity">
+
+    <FrameLayout
+        android:id="@+id/framelayout_ct"
+        android:layout_above="@id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rd_group_bottom"
+            android:layout_alignParentBottom="true"
+            android:background="#00FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/diancan_btn"
+                android:layout_marginRight="75dp"
+                android:layout_marginLeft="75dp"
+                android:background="@drawable/tab_ct_diancan"
+                style="@style/radio_style" />
+            <RadioButton
+                android:id="@+id/dingdan_btn"
+                android:layout_marginRight="75dp"
+                android:layout_marginLeft="75dp"
+                android:background="@drawable/tab_ct_dingdan"
+                style="@style/radio_style"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

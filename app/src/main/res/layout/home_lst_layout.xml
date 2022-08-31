@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/title"
+            android:padding="10dp"
+            android:text="多高校寒假时间公布!"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/zuozhe"
+            android:padding="10dp"
+            android:text="大学生官微123  4869次浏览"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="100dp"
+        android:layout_height="95dp"/>
+
+</RelativeLayout>

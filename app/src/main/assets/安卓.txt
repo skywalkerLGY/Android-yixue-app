@@ -1,0 +1,241 @@
+Android Android Android Android 手机新概念
+操作系统的选择--定制和长尾
+� 重构
+� MVC 和 Web APP 架构
+Android Android Android Android 开发背景
+� 计算技术、无线接入技术的发展，使嵌入式系统逐渐有能力对桌面系统常规业务进行支持。
+� 谷歌长期以来奉行的移动发展战略：通过与全球各地的手机制造商和移动运营商结成合作伙伴，开发既
+有用又有吸引力的移动服务，并推广这些产品。Android 进一步推进了"随时随地为每个人提供信息"这一企业
+目标的实现。
+� Open Handset Alliance 汇集了多家业界巨头。运营商如：China Mobile、NTT DoCoMo、Vodafone、T-Mobile
+等；设备制造商如 ASUS、HTC、Huawei、LG、Motorola、Samsung、Sony Ericsson、Toshiba 等；芯片厂商
+如 ARM、Broadcom、Intel、Marvell、NVIDIA、Qualcomm 等。软件厂商如 Ascender、eBay、Esmertec、LivingImage
+等。
+� Android 更像一款桌面环境为 Java 的 Linux 操作系统。有助于 Google 实现其"随时随地为每个人提供信
+息"的企业战略。
+HTC Dream/G1 Dream/G1 Dream/G1 Dream/G1 具体配置
+硬件
+3.17 英寸 HVGA (480 x 320) ；1150mAh 电池 ；高通 528Mhz 7201 处理器 ；64MB RAM、128MB ROM ；1GB
+MicroSD 卡 ；QWERTY 全键盘；310 万像素摄像头。
+流媒体
+支持视频格式：H.264、流媒体、3GPP、MPEG4 和 Codec 3GP ；支持音频格式：MP3、AAC、AAC+、WMA、
+MPEG4、WAV、MIDI、REAL、AUDIO 和 OGG；支持墙纸格式：JPG、BMP、PNG 和 GIF ；铃声(MP3、
+AAC、AAC+和 WMA)。
+接入技术
+蓝牙(class 1) ；四频(850，900，1800，1900)；支持 3G，802.11b 和 802.11g。
+-----------------------------------Android 编程基础
+5
+互联网
+支持 HTTP、WAP Push 和 xHTML；支持 POP、IMAP、SMTP，以及 AOL 和 GMAIL 电子邮件服务；支持 AIM、
+MSN、雅虎通和 GTALK；与谷歌日历同步；与 Android Market 联机；支持谷歌“街景”服务；包装盒内附
+数据工具包。
+更多信息
+https://sites.google.com/a/android.com/opensource/release-features
+Android Android Android Android 盈利模式
+Android 的 App Market 模式，软件开发者获得 7 成收入，3 成用于系统维护。难点在于位置营销。
+设备商通过卖设备、内置特色应用来获得盈利。也可以兼职专业软件开发者进行赢利。
+Google 自身通过基于统一平台为用户提供信息来盈利。
+Android Android Android Android 的优势
+� 源代码完全开放，便于开发人员更清楚的把握实现细节，便于提高开发人员的技术水平，有利于开发出
+更具差异性的应用。
+� 采用了对有限内存、电池和 CPU 优化过的虚拟机 Dalvik，Android 的运行速度比想象的要快很多。
+� 运营商（中国移动等）的大力支持，产业链条的热捧。
+� 良好的盈利模式（3/7 开），产业链条的各方：运营商、制造商、独立软件生产商都可以获得不错的利益 。
+将移动终端的评价标准从硬件向软件转变，极大的激发了软件开发者的热情。
+� Android 的源代码遵循 Apache V2 软件许可，而不是通常的 GPL v2 许可。有利于商业开发。
+� 具有强大的 Linux 社区的支持。
+Android Android Android Android 的不足
+� 由于采用了 Java 作为应用开发语言，目前可用的传统第三方应用还很少，但由于 Android 是一款完全开
+源的移动计算平台，相信第三方应用会很快的丰富起来。
+� Google 提供了一套 Java 核心包(J2SE 5,J2SE 6)的有限子集，尚不承诺遵守 Java 任何 Java 规范,可能会造
+成Ｊava 阵营的进一步分裂。
+� 现有应用完善度不太够，需要的开发工作量较大。
+-----------------------------------Android 编程基础
+6
+� 基于 QEMU 开发的模拟器调试手段不十分丰富，只支持通话、ＳＭＳ等，速度慢。
+� 暂不具备 Push Mail 和 Office(DataViz、 QuickOffice 计划近期推出)功能，目前主要面向的是普通消费者
+用户，对商业用户支持尚弱。
+Android Android Android Android 带来的影响
+ANDROID 的推出后可能影响的产业包括移动电信业，软件开发业，手机制造业，在以消费者为核心的状态 。
+对消费者的影响
+� 高档手机选择面增加。
+� Ａndroid 在设计初期就考虑了与现其有业务的融合，改变以往从计算机为主改成从手机使用为导向。新
+生应用如：Ｇoogle 地图及其衍生应用、GMail、GTalk 等。
+� GPS 卫星导航功能，手机照相，MP3，蓝芽等均被列为 Android 所提供支持的基本选项。
+� Android 的平台基本上是免费的，虽然有部份原生链接库会要求费用，但大部份是免权利金；Android 的
+程序可以采用 JAVA 开发，但是因为它的虚拟机(Virtual Machine) Dalvik，是将 JAVA 的 bytecode 转成自
+己的格式，回避掉需要付给 SUN 有关 JAVA 的授权费用。
+对手机制造者的影响
+� Android 是款开源的移动计算软件平台，组建了 google 主导的拥有众多产业界巨头的产业联盟，有利于
+高效开发、降低成本。
+� 由于是源代码开放的产品，对非主导厂商而言，可以避开与主导厂商在核心技术上面的差距，开发出更
+具竞争力和差异化的产品。
+对运营商的影响
+� 丰富的数据业务，将导致数据流量的显著增加 。
+� 手机来源增加，价格更为低廉。
+对软件开发者的影响
+� 因为 Android 移动软件平台抱持开放互通的观念，势必吸引不少自由软件的拥护者。
+� 开发方向有三个重点:
+-----------------------------------Android 编程基础
+7
+� 应用软件的开发
+� 特殊功能的原生链接库
+� 专属应用程序框架
+� 由于 Android 的Ａpp Market 性质，可能催生出专门的应用软件开发商。
+Android Android Android Android 应用现状
+� 设备商：lenovo、琦基、戴尔、三星、摩托罗拉、华为、英特尔、Kogan、索爱、华硕、多普达、爱可视 、
+Archos 等。
+� 制造商：HTC、Telstra 等。
+� 手机设计公司：播思、德信无线等。
+� 运营商：中国移动、Sprint、T-Mobile、Teleca AB 等。
+� 芯片商：Qualcomm、Marvell、TI、Boardcom 等。
+-----------------------------------Android 编程基础
+8
+Android Android Android Android 开发入门
+System Requirements Requirements Requirements Requirements
+The sections below describe the system and software requirements for developing Android applications using the
+Android SDK tools included in Android 1.1 SDK, Release 1.
+Supported Supported Supported Supported Operating Operating Operating Operating Systems Systems Systems Systems
+• Windows XP (32-bit) or Vista (32- or 64-bit)
+• Mac OS X 10.4.8 or later (x86 only)
+• Linux (tested on Linux Ubuntu Dapper Drake)
+Supported Supported Supported Supported Development Development Development Development Environments Environments Environments Environments
+Eclipse IDE
+o Eclipse 3.3 (Europa), 3.4 (Ganymede)
+� Eclipse JDT plugin (included in most Eclipse IDE packages)
+� WST (optional, but needed for the Android Editors feature; included in most Eclipse IDE
+packages)
+o JDK 5 or JDK 6 (JRE alone is not sufficient)
+o Android Development Tools plugin (optional)
+o Not compatible with Gnu Compiler for Java (gcj)
+Other development environments or IDEs
+o JDK 5 or JDK 6 (JRE alone is not sufficient)
+o Apache Ant 1.6.5 or later for Linux and Mac, 1.7 or later for Windows
+o Not compatible with Gnu Compiler for Java (gcj)
+Note: If JDK is already installed on your development computer, please take a moment to make sure that it meets the
+version requirements listed above. In particular, note that some Linux distributions may include JDK 1.4 or Gnu
+Compiler forJava, both of which are not supported forAndroid development
+-----------------------------------Android 编程基础
+9
+什么是 Android? Android? Android? Android?
+Android 是一个专门针对移动设备的软件集，它包括一个操作系统，中间件和一些重要的应用程序。Beta 版
+的 Android SDK 提供了在 Android 平台上使用 JaVa 语言进行 Android 应用开发必须的工具和 API 接口。
+特性
+• 应用程序框架 支持组件的重用与替换
+• Dalvik 虚拟机 专为移动设备优化
+• 集成的浏览器 基于开源的 WebKit 引擎
+• 优化的图形库 包括定制的2D 图形库，3D 图形库基于 OpenGL ES 1.0 （硬件加速可选）
+• SQLite 用作结构化的数据存储
+• 多媒体支持 包括常见的音频、视频和静态图像格式（如 MPEG4, H.264, MP3, AAC, AMR, JPG, PNG, GIF）
+• GSM 电话技术 （依赖于硬件）
+• 蓝牙 Bluetooth, Bluetooth, Bluetooth, Bluetooth, EDGE, 3G, 和 WiFi（依赖于硬件）
+• 照相机，GPS，指南针，和加速度计（accelerometer accelerometer accelerometer accelerometer） （依赖于硬件）
+• 丰富的开发环境 包括设备模拟器，调试工具，内存及性能分析图表，和 Eclipse 集成开发环境插件
+应用程序
+Android 会同一系列核心应用程序包一起发布，该应用程序包包括 email 客户端，SMS 短消息程序，日历，
+地图，浏览器，联系人管理程序等。所有的应用程序都是使用 JAVA 语言编写的。
+应用程序框架
+开发人员也可以完全访问核心应用程序所使用的 API 框架。该应用程序的架构设计简化了组件的重用；任何
+一个应用程序都可以发布它的功能块并且任何其它的应用程序都可以使用其所发布的功能块（不过得遵循框
+架的安全性限制）。同样，该应用程序重用机制也使用户可以方便的替换程序组件。
+隐藏在每个应用后面的是一系列的服务和系统, 其中包括；
+• 丰富而又可扩展的视图（Views），可以用来构建应用程序， 它包括列表（lists），网格（grids）， 文
+本框（text boxes），按钮（buttons）， 甚至可嵌入的 web 浏览器。
+• 内容提供器（Content Providers）使得应用程序可以访问另一个应用程序的数据（如联系人数据库）， 或
+者共享它们自己的数据
+• 资源管理器（Resource Manager）提供 非代码资源的访问，如本地字符串，图形，和布局文件（ layout
+files ）。
+• 通知管理器 （Notification Manager） 使得应用程序可以在状态栏中显示自定义的提示信息。
+• 活动管理器（ Activity Manager） 用来管理应用程序生命周期并提供常用的导航回退功能。
+-----------------------------------Android 编程基础
+10
+程序库
+Android 包含一些 C/C++库，这些库能被 Android 系统中不同的组件使用。它们通过 Android 应用程序框架
+为开发者提供服务。以下是一些核心库：
+• 系统 C 库 - 一个从 BSD 继承来的标准 C 系统函数库（ libc ）， 它是专门为基于 embedded linux
+的设备定制的。
+• 媒体库 - 基于 PacketVideo OpenCORE；该库支持多种常用的音频、视频格式回放和录制，同时支持
+静态图像文件。编码格式包括 MPEG4, H.264, MP3, AAC, AMR, JPG, PNG 。
+• Surface Surface Surface Surface Manager Manager Manager Manager - 对显示子系统的管理，并且为多个应用程序提 供了2D 和3D 图层的无缝融合。
+• LibWebCore LibWebCore LibWebCore LibWebCore - 一个最新的 web 浏览器引擎用，支持 Android 浏览器和一个可嵌入的 web 视图。
+• SGL - 底层的2D 图形引擎
+• 3D libraries libraries libraries libraries - 基于 OpenGL ES 1.0 APIs 实现；该库可以使用硬件 3D 加速（如果可用）或者使用高
+度优化的3D 软加速。
+• FreeType FreeType FreeType FreeType -位图（bitmap）和矢量（vector）字体显示。
+• SQLite - 一个对于所有应用程序可用，功能强劲的轻型关系型数据库引擎。
+Android Android Android Android 运行库
+Android 包括了一个核心库，该核心库提供了 JAVA 编程语言核心库的大多数功能。
+每一个 Android 应用程序都在它自己的进程中运行，都拥有一个独立的 Dalvik 虚拟 机实例。Dalvik 被设计
+成一个设备可以同时高效地运行多个虚拟系统。 Dalvik 虚拟机执行（.dex）的 Dalvik 可执行文件，该格式文
+件针对小内存使用做了 优化。同时虚拟机是基于寄存器的，所有的类都经由 JAVA编译器编译，然后通过 SDK
+中 的 "dx" 工具转化成.dex 格式由虚拟机执行。
+Dalvik 虚拟机依赖于 linux 内核的一些功能，比如线程机制和底层内存管理机制。
+Linux 内核
+Android 的核心系统服务依赖于 Linux 2.6 内核，如安全性，内存管理，进程管理， 网络协议栈和驱动模型 。
+Linux 内核也同时作为硬件和软件栈之间的抽象层。
+-----------------------------------Android 编程基础
+11
+Android Android Android Android 的系统架构
+系统构架
+Android Android Android Android 内核
+� Linux 内核版本 2.6
+� 位于硬件和软件堆之间的抽象层
+� 核心服务：安全机制、内存管理、进程管理、网络、硬件驱动。
+Android 依赖 Linux 内核 2.6 提供核心服务，比如安全、内存管理、进程管理、网络、硬件驱动。在这里，Linux
+内核扮演的是硬件层和系统其它层次之间的一个抽象层的概念。这个操作系统并非类 GNU/Linux 的，因为其
+系统库，系统初始化和编程接口都和标准的 Linux 系统是有所不同的。
+-----------------------------------Android 编程基础
+12
+从 Google 目前 release 的 Linux 系统来看，其没有虚拟内存文件系统，系统所用的是 yaffs2 文件系统，具体
+的映像也都位于 SDK 安装目录下。通过 emulator -console 命令，我们可以在 host 中断下得到一个简单的可以
+控 制 Android 的 shell ， 这 个 系 统 包 含 了 一 个 Toolbox ， 提 供 一 些 基 本 的 命 令 工 具 ， 集 中 在
+/sbin,/system/sbin,/system/bin 中，但是很简陋，命令种类也很少。
+目前 Android 的程序安装模式是靠 Eclipse 自动进行的，通过对底层的分析可知，大致步骤就是在/data/app 和
+data/data 下存放 android 底层和普通内核没有什么大的区别，我们可以将其作为一个 Linux 来进行开发和
+hacking。
+Lib 和运行环境
+lib
+� C/C++库：被各种 Android 组件使用
+� 通过应用程序框架开发者可以使用其功能
+� 包括：
+� 媒体库：MPEG4 H.264 MP3 JPG PNG ..... � WebKit/LibWebCore：Web 浏览引擎
+� SQLite 关系数据库引擎
+� 2D，3D 图形库、引擎
+丰富的类库支持：2D 和 3D 图像库 OpenGL ES、数据库 SQLite、对象数据库 db4o 类库、媒体库、基于 Linux
+底层系统 C 库等等，让应用开发更简单多样。Google 使用 Apache 的 Harmony 类库，Harmony 某些方面速度
+快于 Sun 的 VM。Runtime 在 Dalvik Java VM 上，Dalvik 采用简练、高效的 byte code 格式运行，它能够在低
+资耗和没有应用相互干扰的情况下并行执行多个应用。
+运行时环境
+� 核心库提供的 Java 功能
+� Dalvik 虚拟机依赖于 Linux 内核，例如线程或底层内存管理
+� 设备可以运行多个 Dalvik 虚拟机，每一个 Android 应用程序在它自己的 Dalvik VM 实例中运行
+� VM 执行优化的 Dalvik 可执行文件(.dex)
+� Dx-工具把编译过的 Java 文件转换为 dex 文件
+-----------------------------------Android 编程基础
+13
+应用和框架
+� 核心应用，例如联系人，电子邮件，电话，浏览器，日历，地图， ... � 充分访问所有核心应用框架 API
+� 简化组件的重用
+� 用 Java 编写应用程序
+-----------------------------------Android 编程基础
+14
+支持的功能
++ Application framework: 可重用的和可替换的组件部分，在这个层面上，所有的软件都是平等的。
++ Dalvik virtul machine: 一个基于 Linux 的虚拟机。
++ Integrated browser: 一个基于开源的 WebKit 引擎的浏览器，在应用程序层。
++ Optimized graphics: 包含一个自定义的 2D 图形库和基于 OpenGL ES 1.0 标准的 3D 实现。
++ SQLite: 数据库
++ Media support: 通用的音频，视频和对各种图片格式的支持(MPEG4, H.264, MP3,AAC, AMR, JPG, PNG, GIF)
++ GSM Telephony: GSM 移动网络, 硬件支持。
++ Bluetooth, EDGE, 3G, and WiFi: 都依赖于硬件支持。
++ Camera, GPS, compass, and accelerometer: 都依赖于硬件支持。
++ Rich development environment: 包含一套完整的开发工具集，方便跟踪调试，内存检测和性能测试，而且
+提供了
+Eclipse 的插件。最底层的是一个 Linux Kernel，加载了几个移动设备必要的系统驱动（这么说来 Android 基
+础系统是要以 GPL 发布了？不知道 34 家厂商的硬件开发商们是怎么样想的）；上面是类库和 Runtime，绿色
+的类库部分可以看到大名鼎鼎的 SQLite，这个软件甚至声称自己属于公共领域（比 MIT License 还要强 @@）, 字体 FreeType 是 BSD-style License 的，图形库 OpenGL ES 只需通过产品测试，无偿使用于产品。再向上看
+是应用层的东西了，这里可以做的事情就非常多了，各个社区，各个厂家都可以参与进来。难怪 Android 的sdk
+可以 Apache License 发布了,对企业和开发人员友好啊。 那么 Google 自己的东西在哪里呢？没错，就是右
+边那个 runtime，最吸引技术人员的就是这个 runtime（注意，这个才是 Android 的核心）。Google 为它准备了
+一个虚拟机，叫做 Dalvik。这个让人摸不着头脑的东西的到底是什么？从开发平台上我们清清楚楚地得到了
+答案：Java

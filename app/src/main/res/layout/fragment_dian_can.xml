@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Eat_CanTing.DianCanFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sky4">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/editbox"
+            android:hint="搜索店铺/商品"
+            android:textSize="15dp"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rel0"
+        android:background="@drawable/sky3">
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/user_photo" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/user_photo"
+            android:text="李光亚"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/user_photo"
+            android:src="@drawable/ct_user_value" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_eat"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/select"
+            android:layout_width="80dp"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/zaocan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/wenju1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热销" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wucan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/wenju2"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="上新" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wancan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/wenju3"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="降价" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_eat"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_below="@id/select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginRight="10dp"
+        android:background="#71FFFFFF">
+
+        <com.example.curriculum_design.ScrollingTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#55FFFFFF"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="易学文具商店,文具是学习不可缺少的装备，欢迎同学们前来下单购买.                            "
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:layout_below="@id/line_eat"
+        android:background="@drawable/sky5">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="153dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="153dp">
+
+                <Button
+                    android:id="@+id/ct_tejia1"
+                    android:layout_width="100dp"
+                    android:layout_height="153dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ct_tejia1" />
+
+                <Button
+                    android:id="@+id/ct_tejia2"
+                    android:layout_width="100dp"
+                    android:layout_height="153dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ct_tejia2" />
+
+                <Button
+                    android:id="@+id/ct_tejia3"
+                    android:layout_width="100dp"
+                    android:layout_height="153dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ct_tejia3" />
+
+                <Button
+                    android:id="@+id/ct_tejia4"
+                    android:layout_width="100dp"
+                    android:layout_height="153dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ct_tejia4" />
+
+                <Button
+                    android:id="@+id/ct_tejia5"
+                    android:layout_width="100dp"
+                    android:layout_height="153dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ct_tejia5" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>

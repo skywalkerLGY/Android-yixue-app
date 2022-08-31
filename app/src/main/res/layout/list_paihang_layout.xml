@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+        android:id="@+id/mingci"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="1"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/name"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="lgy"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/across"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="100"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/speed"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="100"
+        android:textSize="16sp"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:background="#E3E3E3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除该订单"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:gravity="center"/>
+        <Button
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/delete"
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:background="#ffffff"
+            android:textColor="@color/smssdk_common_black"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

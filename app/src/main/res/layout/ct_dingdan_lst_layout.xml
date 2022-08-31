@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/editbox"
+        android:elevation="3dp"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+    <ImageView
+        android:id="@+id/dd_image"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/hanguozhaji" />
+
+    <TextView
+        android:id="@+id/dd_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/dd_image"
+        android:text="三个先森的韩国炸鸡"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dd_money_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="￥16.8\n 共1件" />
+
+    <TextView
+        android:id="@+id/xdsj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dd_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:text="订单时间:" />
+
+    <TextView
+        android:id="@+id/dd_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dd_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/xdsj"
+        android:text="2021年1月2号18:09" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/btn_haoping"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_haoping"
+        android:text="给个好评"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000" />
+
+    </RelativeLayout>
+</RelativeLayout>

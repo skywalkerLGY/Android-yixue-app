@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:src="@drawable/gonggao" />
+
+    <ViewFlipper
+        android:id="@+id/id_scrollNoticeTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="3.0dip"
+        android:flipInterval="5000"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_marginTop="11dp"
+            android:id="@+id/id_scrollNoticeContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是第一条通知内容....." />
+
+        <TextView
+            android:layout_marginTop="11dp"
+            android:id="@+id/id_scrollNoticeContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我就是一个非常喜欢编程的人......" />
+    </ViewFlipper>
+
+</LinearLayout>

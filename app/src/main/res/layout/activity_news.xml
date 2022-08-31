@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECECEC">
+        <TextView
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="2021年考研报考人数创历史新高 “考研热”从何而来？"/>
+        <ImageView
+            android:id="@+id/images1"
+            android:layout_below="@id/title"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/yaoxiaoyuan_ggao"/>
+        <TextView
+            android:id="@+id/image_text"
+            android:padding="5dp"
+            android:layout_below="@id/images1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12月26日，考生走进新疆医科大学新医路校区考点。"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/image_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:id="@+id/content"
+            android:text="12月27日17点，完成最后一门专业课考试后，考生刘铮铮走出考场，长舒了一口气。复习了一整年，直到后期才进入复习状态，“被疫情打乱复习计划，经历崩溃和心理重建，最后还是坚持了下来”。
+
+当日，2021年全国硕士研究生招生考试基本落下帷幕；考研报考人数为377万，创历史新高；一位新冠肺炎感染者在辽宁省新冠肺炎集中救治大连中心顺利参加了考试。
+
+发生在考研日的这些新闻牵动人心，但面对“考研热”，我们还应该关注些什么？"/>
+    </RelativeLayout>
+
+</ScrollView>

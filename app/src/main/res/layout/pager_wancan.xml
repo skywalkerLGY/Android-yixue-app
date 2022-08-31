@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_height="120dp"
+                android:background="@drawable/lonxia"
+                style="@style/canting_button" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/shaokaoyanjiusuo" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/shishangshaokao" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/zuoguoyouzha" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/zhengzondonbeicai" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/tianmimihanguozhaji" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/jingyekaoroujing" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/suhexiaochao" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/jueweiyabo" />
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/yangjipaidang" />
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/chengduyizhan" />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_height="120dp"
+                style="@style/canting_button"
+                android:background="@drawable/zhougonyihap" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

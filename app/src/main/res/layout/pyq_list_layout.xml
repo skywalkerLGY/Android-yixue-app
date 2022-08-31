@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/pyq_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="1dp"
+            android:paddingTop="9dp"
+            android:text="233"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/pyq_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/pyq_photo"
+            android:text="李光亚"
+            android:textColor="#003560"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pyq_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/pyq_photo"
+            android:text="2020.12.19日9:03"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pyq_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyq_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/pyq_photo"
+            android:autoLink="all"
+            android:text="这是朋友圈内容" />
+
+        <ImageView
+            android:id="@+id/pyq_image"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/pyq_text"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/pyq_photo"
+            android:background="@drawable/skyblue" />
+
+        <TextView
+            android:id="@+id/zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="-15dp"
+            android:text="+1"
+            android:textColor="#FF5722"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/pyq_image"
+>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="来自-易学教育app"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_zan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/dianzan" />
+
+            <Button
+                android:id="@+id/btn_pinglun"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/pinglun" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:background="#E3E3E3"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/zan_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#A372DCCF"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="0人觉得很赞"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.example.curriculum_design.Find.MyListView
+                    android:id="@+id/pinglun_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ECECEC" />
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_remove"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-75dp"
+        android:background="#989898">
+
+        <Button
+            android:id="@+id/pyq_zhiding"
+            android:layout_width="75dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:text="置顶"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

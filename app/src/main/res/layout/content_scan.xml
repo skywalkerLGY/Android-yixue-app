@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    layout_width、layout_height：启动扫描界面的布局参数
+
+    zxing_framing_rect_width、zxing_framing_rect_height：
+    在扫描界面中，只能扫描二维码的宽高，去掉后会有默认的宽高
+    -->
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zxing_barcode_surface" />
+
+    <!--注意自定义的扫描活动路径-->
+    <com.example.curriculum_design.ScanWidget
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zxing_viewfinder_view"
+        app:zxing_possible_result_points="@color/zxing_custom_possible_result_points"
+        app:zxing_result_view="@color/zxing_custom_result_view"
+        app:zxing_viewfinder_laser="@color/zxing_custom_viewfinder_laser"
+        app:zxing_viewfinder_mask="@color/zxing_custom_viewfinder_mask"/>
+
+    <!--@drawable/bmt 扫描条图标  请自行找素材-->
+    <View
+        android:id="@+id/scan_the"
+        android:background="@drawable/bmt"
+        android:layout_width="wrap_content"
+        android:layout_height="70px" />
+
+</merge>

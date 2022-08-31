@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6800FB</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="tran">#00FFFFFF</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#5C5C5C</color>
+    <color name="login_color">#000000</color>
+
+    <color name="zhou1">#FF5722</color>
+    <color name="zhou2">#03A9F4</color>
+    <color name="zhou3">#4CAF50</color>
+    <color name="zhou4">#FF9800</color>
+    <color name="zhou5">#3F51B5</color>
+    <color name="zhou6">#009688</color>
+    <color name="zhou7">#E91E63</color>
+
+    <color name="color_1">#4CAF50</color>
+    <color name="color_2">#C39200</color>
+    <color name="color_3">#FF9800</color>
+    <color name="color_4">#FF5722</color>
+    <color name="color_5">#795548</color>
+    <color name="color_6">#9E9E9E</color>
+    <color name="color_7">#607D8B</color>
+    <color name="color_8">#29B6F6</color>
+    <color name="color_9">#008C9E</color>
+    <color name="color_10">#009688</color>
+    <color name="color_11">#D81B60</color>
+    <color name="color_12">#2196F3</color>
+    <color name="color_13">#8BC34A</color>
+    <color name="color_14">#FF5722</color>
+    <color name="color_15">#26A69A</color>
+
+</resources>

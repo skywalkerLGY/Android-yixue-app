@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.curriculum_design.ScrollViewUpRefreshLayout
+            android:id="@+id/shuaxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="正在刷新"
+                    android:textColor="#595959"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.example.curriculum_design.MyScrollView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/editbox_lxr"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/sousuo"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/fangdajin" />
+
+                        <EditText
+                            android:id="@+id/edittext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/sousuo"
+                            android:background="@null"
+                            android:hint="搜索,下拉搜索框空白处,刷新联系人"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.example.curriculum_design.MyScrollView>
+        </com.example.curriculum_design.ScrollViewUpRefreshLayout>
+
+
+        <ListView
+            android:id="@+id/list_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shuaxing"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_show_letter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/zm"
+            android:gravity="center"
+            android:text="W"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <com.example.curriculum_design.message.ContactIndexView
+            android:id="@+id/view_contact"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shuaxing"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp" />
+        <Button
+            android:id="@+id/lxr_zhankai"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/lxr_zhankai" />
+        <Button
+            android:id="@+id/lxr_btn1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="屏蔽"
+            android:textSize="12sp"
+            android:background="@drawable/lxr_btn1"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/lxr_btn2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="取消"
+            android:textSize="12sp"
+            android:background="@drawable/lxr_btn2"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/lxr_btn3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="解除"
+            android:textSize="12sp"
+            android:background="@drawable/lxr_btn3"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">易学教育平台</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yhxy">\n请务必仔细阅读,充分理解<a href="https://support.qq.com/products/360917/faqs/106112">易学教育隐私政策</a>的所有条款。如您同意接收以上条款，请点击“同意”后开始我们的服务\n\n感谢您使用易学APP</string>
+
+</resources>

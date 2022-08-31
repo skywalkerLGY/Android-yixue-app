@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rd_group_bottom"
+        android:layout_marginBottom="0dp" />
+
+    <RadioGroup
+        android:id="@+id/rd_group_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_btn"
+            android:drawableTop="@drawable/home_icon"
+            android:layout_weight="1"
+            android:text="主页"
+            style="@style/radio_style" />
+        <RadioButton
+            android:id="@+id/message_btn"
+            android:drawableTop="@drawable/tab_menu_message"
+            android:layout_weight="1"
+            android:text="好友"
+            style="@style/radio_style">
+
+        </RadioButton>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/find_btn"
+            android:drawableTop="@drawable/tab_menu_find"
+            android:layout_weight="1"
+            android:text="社区"
+            style="@style/radio_style"/>
+        <RadioButton
+            android:id="@+id/my_btn"
+            android:drawableTop="@drawable/tab_menu_my"
+            android:layout_weight="1"
+            android:text="个人"
+            style="@style/radio_style"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/msg_sum"
+        android:background="@drawable/red_circle"
+        android:layout_marginLeft="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:text="11"
+        android:textSize="11sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/login"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

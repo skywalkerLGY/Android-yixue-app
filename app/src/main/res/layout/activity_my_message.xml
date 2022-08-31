@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_na"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message.MyMessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="#1E83D3"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_margin="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/user_photo"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/user_photo"
+                android:text="Your"
+                android:textColor="@android:color/white" />
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/user_name"
+                android:layout_toRightOf="@id/user_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="#10FF1A"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:text="手机在线 - WIFI >"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/camera"
+                android:background="@drawable/refresh"
+                android:gravity="center"
+                android:visibility="visible" />
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_toLeftOf="@id/jiahao"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/camera"/>
+            <ImageView
+                android:id="@+id/jiahao"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/add_white"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:elevation="5dp"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/title"
+            android:orientation="horizontal"
+            android:background="#DDDDDD">
+            <EditText
+                android:gravity="center"
+                android:hint="搜索"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox"
+                android:layout_margin="8dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/search">
+
+            <Button
+                android:id="@+id/receive_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:text="我收到的" />
+
+            <Button
+                android:id="@+id/sended_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:text="我发出的" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/don"
+            android:layout_width="170dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/top"
+            android:background="#008377" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_message"
+            android:background="@drawable/skyblue22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/don" />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/cebian_menu_msg"
+        app:headerLayout="@layout/head_message"
+        app:menu="@menu/new_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

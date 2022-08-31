@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="225dp"
+    android:layout_height="207dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/back">
+    <ImageView
+        android:id="@+id/person_photo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/user_photo"/>
+    <TextView
+        android:id="@+id/head_nicheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"
+        android:text="易学"/>
+    <TextView
+        android:id="@+id/head_qianming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="18dp"
+        android:text="谋事在人"/>
+
+</LinearLayout>

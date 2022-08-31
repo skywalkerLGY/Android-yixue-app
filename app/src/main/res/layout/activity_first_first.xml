@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_first">
+
+    <TextView
+        android:id="@+id/yao"
+        android:layout_marginLeft="-130dp"
+        android:layout_width="280dp"
+        android:layout_marginTop="800dp"
+        android:layout_height="200dp"
+        android:background="@drawable/createby"/>
+    <TextView
+        android:id="@+id/timer"
+        android:background="@drawable/biankuang"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:text="3"
+        android:textStyle="italic"/>
+    <Button
+        android:text="跳过"
+        android:id="@+id/skip"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:background="@drawable/skip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="60dp"
+        android:layout_height="25dp"/>
+</RelativeLayout>

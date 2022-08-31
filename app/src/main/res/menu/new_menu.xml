@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/zhuye_icon"
+            android:title="主页" />
+        <item
+            android:id="@+id/my_kuaidi"
+            android:icon="@mipmap/kuaidi_icon"
+            android:title="我的二手书" />
+        <item
+            android:id="@+id/my_message"
+            android:icon="@mipmap/message_icon"
+            android:title="我的消息" />
+        <item
+            android:id="@+id/ip_change"
+            android:icon="@drawable/ip_icon"
+            android:title="网络IP切换" />
+<!--    </group>-->
+        <item android:title="其他">
+                <menu>
+                        <item
+                            android:id="@+id/about_us"
+                            android:icon="@mipmap/about_us"
+                            android:title="关于易学教育平台" />
+                        <item
+                            android:id="@+id/exit_yao"
+                            android:icon="@mipmap/exit_icon"
+                            android:title="退出" />
+                </menu>
+        </item>
+</menu>

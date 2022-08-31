@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_private"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="易学教育隐私政策"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/text_private"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15sp"
+            android:text="@string/yhxy"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Button
+            android:id="@+id/disagree"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="不同意"
+            android:textStyle="bold"
+            android:textColor="#711381"
+            android:background="#00ffffff"/>
+        <Button
+            android:id="@+id/agree"
+            android:textStyle="bold"
+            android:background="#00ffffff"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textColor="#711381"
+            android:text="同意"/>
+    </LinearLayout>
+</LinearLayout>

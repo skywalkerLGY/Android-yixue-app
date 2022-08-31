@@ -1,0 +1,248 @@
+第 1 章 Windows 应用程序开发入门
+C#是一种面向对象的、运行于.NET Framework 之上的高级程序设计语言，具有许多优
+良特性和广泛的应用前景。本章简要介绍 C#的基础知识，内容包括 .NET Framework 框架、
+公共语言运行库、C#应用程序类型和 Windows 应用程序开发等。通过本章的学习，读者可
+以了解 C#与.NET Framework、Visual Studio 2010 集成开发环境的关系，掌握 Visual Studio
+2010 集成开发环境下基于 C#的 Windows 应用程序的开发步骤。
+1.1 C#概述
+1.1.1 C#与.NET 框架的关系
+C#（读作“C sharp”）是微软公司推出的一种以 C/C++为基础的新的开发语言。作为一
+种新的程序设计语言，C#的特点主要体现在以下两个方面。
+1）它是专门为配合 Microsoft 的.NET Framework 使用而设计开发的。.NET Framework
+为使用 C#语言设计和开发桌面和网络应用程序提供了一个功能强大的平台。
+2）它是一种基于现代面向对象设计方法的语言。C#语言的开发和设计是 Microsoft 在近
+20 年众多面向对象语言应用经验基础之上完成的，它吸收了其他语言的优点，使应用程序的
+开发变得更加简单和高效。
+就其本身而言，C#只是一种程序设计语言，尽管它的应用是基于面向.NET 环境的代码
+之上，但它本身并不是.NET 框架的一部分。因此，.NET 支持的一些特性，C#并不完全支
+持，而.NET 也不支持 C#语言支持的一些特性，如运算符重载。由于使用 C#设计和开发的
+应用程序需要在.NET Framework 之上运行，所以对于 C#语言而言，应用程序的实现依赖
+于.NET。鉴于这种依赖关系，在开始介绍 C#程序设计语言之前，有必要先对.NET
+Framework 进行简单的了解。
+1.1.2 .NET Framework 框架概述
+1．什么是.NET
+.NET 是 Microsoft XML Web Services 平台。XML Web Services 允许应用程序通过
+Internet 进行通信和数据共享，而不管所采用的是何种操作系统、设备或编程语言。.NET 平
+台提供创建 XML Web Services，并将这些服务集成在一起。它大致上可分为几种主要语言，
+如 Visual Basic .NET、Visual C＃、Visual J＃、Visual C++ .NET 等，在 Visual Studio 2010 平
+理论知识
+ 2
+台中又增加了新的语言 F#。无论使用的是哪一种语言，在.NET 这个平台上都将编译成微软
+中间语言（Microsoft Intermediate Language，MSIL）以达到无缝集成的目的。
+Windows 操作系统只需要安装 Microsoft .NET Framework 即可运行.NET 程序。Windows
+Server 2003 是内建.NET 支持的第一个操作系统。
+在.NET 开发平台下，所有语言（C#、VB.NET、J#、[Managed C++]、F#）都会被编译
+为 MSIL，再由公共语言运行库（Common Language Runtime，CLR）负责运行。CLR 是微
+软公司开发平台.NET Framework 运行的基础，提供了.NET 程序运行的底层环境。
+2．.NET Framework
+.NET Framework 是支持生成和运行下一代应用程序和 Web 服务的内部 Windows 组件，
+提供了托管执行环境、简化的开发和部署以及与各种编程语言的集成，旨在实现下列目标。
+1）提供一个一致的面向对象的编程环境，而无论对象代码是在本地存储和执行，还是
+在本地执行但在 Internet 上发布，或者是在远程执行的。
+2）提供一个将软件部署和版本控制冲突最小化的代码执行环境。
+3）提供一个可提高代码（包括由未知的或不完全受信任的第三方创建的代码）执行安
+全性的代码执行环境。
+4）提供一个可消除脚本环境或解释环境的性能问题的代码执行环境。
+5）使开发人员的经验在面对类型大不相同的应用程序（如基于 Windows 的应用程序
+和基于 Web 的应用程序）时保持一致。
+6）按照工业标准生成所有通信，以确保基于 .NET Framework 的代码可与任何其他代
+码集成。
+.NET Framework 具有两个主要组件——公共语言运行库和 .NET Framework 类库（包括
+ADO.NET、ASP.NET、Windows 窗体和 Windows Presentation Foundation）。
+公共语言运行库是 .NET Framework 的基础。将运行库看作一个在执行时管理代码的代
+理，它提供内存管理、线程管理和远程处理等核心服务，并且还强制实施严格的类型安全以
+及可提高安全性和可靠性的其他形式的代码检
+查。事实上，代码管理的概念是运行库的基本原
+则。以运行库为目标的代码称为托管代码，而不
+以运行库为目标的代码称为非托管代码。
+.NET Framework 的另一个主要组件是类库，
+它是一个综合性的面向对象的可重用类型集合，
+可以使用其开发多种应用程序，这些应用程序包
+括传统的命令行或图形用户界面（GUI）应用程
+序，也包括基于 ASP.NET 所提供的最新创新的应
+用程序（如 Web 窗体和 XML Web Services）。
+.NET Framework 的基本结构如图 1-1 所示。
+1.1.3 公共语言运行库
+.NET Framework 的核心是运行库的执行环境，称为公共语言运行库（CLR）或.NET 运
+图 1-1 . NET 框架基本结构图
+3
+行库。通常将在 CLR 的控制下运行的代码称为托管代码（Managed Code）。
+但是，在 CLR 执行开发的源代码之前，需要编译它们（C#或其他语言）。在.NET 中编
+译分为两个阶段。
+1）把源代码编译为微软中间语言（MSIL）。
+2）CLR 把 MSIL 编译为平台专用的代码。
+这个两阶段的编译过程非常重要，正是将代码编译为中间语言使得.NET 具有了许多
+优点。
+微软中间语言与 Java 字节代码共享同一种理念：它们都是一种低级语言，语法很简单
+（使用数字代码，而不是文本代码），可以快速地转换为内部机器码。对于代码来说，这种精
+心设计的通用语法有很重要的优点。
+（1）平台无关性
+首先，这意味着包含字节代码指令的同一文件可以放在任一平台中，编译过程的最后阶
+段可以很容易地完成，这样代码就可以运行在特定的平台上。换言之，编译为中间语言就可
+以获得.NET 平台无关性，这与编译为 Java 字节代码就会得到 Java 平台无关性是一样的。
+（2）提高性能
+前面把 MSIL 和 Java 字节代码做了比较，实际上，MSIL 比 Java 字节代码的作用还要
+大。MSIL 总是即时编译的（称为 JIT 编译），而 Java 字节代码常常是解释性的，其缺点是在
+运行应用程序时，把 Java 字节代码转换为内部可执行代码的过程会导致性能的损失。
+（3）语言的互操作性
+使用 MSIL 不仅支持平台无关性，还支持语言的互操作性。简言之，就是能将任何一种
+语言编译为中间代码，编译好的代码可以与从其他语言编译过来的代码进行交互操作，如
+Visual Basic 2010、Visual C++ 2010、Visual J# 2010、脚本语言、COM 和 COM+。
+1.2 C#应用程序类型
+C#程序设计语言可以快速、方便地设计和开发出多种类型的应用程序。
+1．Windows 控制台应用程序
+C#可以用于创建控制台应用程序。控制台应用程序是指仅使用文本，运行在 DOS 窗口
+中的应用程序。在进行单元测试类库、创建 UNIX/Linux daemon 进程时，就要使用控制台应
+用程序。
+2．ASP.NET 应用程序
+ASP 是用于创建带有动态内容的 Web 页面的一种 Microsoft 技术。ASP 页面基本是一个
+嵌有服务器端 Visual Basic Script 或 Java Script 代码块的 HTML 文件。当客户浏览器请求一
+个 ASP 页面时，Web 服务器就会发送页面的 HTML 部分，并处理服务器端脚本。这些脚本
+通常会查询数据库的数据，在 HTML 中标记数据。ASP 是客户建立基于浏览器的应用程序
+的一种便利方式。
+ASP.NET 是 ASP 的修订版本，它解决了 ASP 的许多问题。但 ASP.NET 页面并没有替
+代 ASP，而是可以与原来的 ASP 应用程序在同一个服务器上同时并存，可以用 C#编写
+ASP.NET。
+ 4
+3．Windows 窗体应用程序
+C#和.NET 非常适合于 Web 开发，它们还为所谓的“胖客户端”应用程序提供了极好的
+支持，这种“胖客户端”应用程序必须安装在处理大多数操作的最终用户的机器上，这种支
+持来源于 Windows 窗体。
+要设计一个图形化的窗口界面，只需要把控件从工具箱拖放到 Windows 窗体上即可。
+要确定窗口的行为，应为该窗体的控件编写事件处理例程。Windows Form 项目编译为.exe
+文件，该文件必须与.NET 运行库一起安装在最终用户的计算机上。与其他.NET 项目类型一
+样，Visual Basic 2010 和 C#都支持 Windows Form 项目。
+4．Windows 控件
+Web 窗体和 Windows 窗体的开发方式一样，但应为它们添加不同类型的控件。Web 窗
+体使用 Web 服务器控件，Windows 窗体使用 Windows 控件。
+Windows 控件比较类似于 ActiveX 控件。在执行 Windows 控件后，它会编译为必须安
+装到客户机器上的 DLL。实际上，.NET SDK 提供了一个实用程序，为 ActiveX 控件创建包
+装器，以便把它们放在 Windows 窗体上。与 Web 控件一样，Windows 控件的创建需要派生
+于特定的类 System.Windows.Forms.Control。C#支持创建自定义控件。
+5．Windows 服务
+Windows 服务（最初称为 NT 服务）是一个在 Windows NT/2000/XP/2003（但没有 Windows
+9x）后台运行的程序。当希望程序连续运行，响应事件，但没有用户的明确启动操作时，就
+应使用 Windows 服务。例如 Web 服务器上的 World Wide Web 服务，它们监听来自客户的
+Web 请求。
+用 C#编写 Windows 服务是非常简单的。System.ServiceProcess 命名空间中的.NET
+Framework 基类可以处理许多与 Windows 服务相关的样本任务。另外，Visual Studio 2010 允
+许创建 C# Windows Service 项目，为基本 Windows 服务编写 C#源代码。
+1.3 可视化程序设计
+1.3.1 面向对象的程序设计
+【例 1-1】 用 C++定义描述矩形（按钮或窗体）的类 Rectangle（事先设置好按钮的位置
+与大小）。
+1）矩形可用左上角坐标（Left，Top）与高、宽（Height，Width）来描述，因此，描述
+矩形类的私有数据成员为 Left、Top、Height、Width。
+2）编写初始化数据成员的构造函数。
+3）编写计算矩形面积的函数 Area()。
+4）主函数中定义矩形对象 r，初值为（1500，1500，600，1500）。
+调用 Area()函数，计算矩形面积并输出显示。
+# include <iostream.h>
+Class Rectangle
+{ 
+5
+private:
+//定义矩形数据成员
+int Left, Top, Height, Width;
+public:
+//定义带参构造函数
+Rectangle(int L, int T, int H, int W)
+{
+Left=L; Top=T; Height=H; Width=W;
+}
+//定义计算矩形面积成员函数
+int Area(void)
+{
+return Height * Width;
+}
+};
+void main (void)
+{ Rectangle r1(1500,1500,600,1500);
+ cout<<"矩形 r1 的面积="<<r1.Area()<< endl;
+}
+下面列出在面向对象程序设计中常用的一些概念。
+1）类（Class）：由描述事物的数据及处理数据的函数组成的导出数据类型，如按钮、窗
+体等。
+2）对象（Object）：用类定义的变量称为对象，如在主函数中用 Rectangle 定义的矩形对
+象 r1。
+3）属性（Property）：将描述对象特性的数据成员称为属性，如矩形左上角坐标（Left,
+Top）、高宽（Height, Width）均为对象 r1 的属性。属性值可以在构造函数中进行赋值，如
+Left=600，Top=600，Height=600，Width=1500。
+对于公有数据成员，属性可在主函数中直接修改，对私有属性则只能通过接口函数进行
+设置和修改。
+4）方法（Method）：将处理数据的成员函数称为方法，如成员函数 Area()为计算矩形面
+积的方法。
+调用方式为：对象.方法[参数]，如 r1.Arear ()。
+1.3.2 可视化程序设计概述
+可视化程序设计是指在窗体中使用控件设计程序界面，编写控件事件驱动程序的设计方
+法。可视化程序设计的界面设计过程中基本不用编写程序代码，因为这些工作在 C#的集成
+开发环境 IDE 中已经帮开发者完成了。
+用 Visual Studio 2010 开发窗体应用程序包括两部分工作：一是设计图形用户界面；二是
+编写程序代码。Visual Studio 2010 提供了一个“画板”（窗体），也就是用户界面，还提供一
+个“工具箱”，在“工具箱”中放了许多被称为“控件”的工具，例如有制作按钮的工具、
+有制作文本框的工具、有显示图形数据的工具等。可以从工具箱中取出所需工具，放到“画
+ 6
+板”中适当的位置上，这样就形成了“用户界面”，也就是说，屏幕上的用户界面是用
+Visual Studio 2010 提供的可视化设计工具——“控件”直接“画”出来的，而不是用程序
+“写”出来的。当然最直观且最复杂的界面设计也是由程序编写出来的，只不过这些编程工
+作不用读者来做，而是由开发平台替程序员来完成。
+1.3.3 事件驱动的程序设计
+1．对象事件
+对象对用户的操作进行响应的动作称为事件。如当鼠标单击按钮对象时，在窗体的标签控件
+上显示“您好！”，用鼠标单击按钮触发了事件，而显示“您好！”的这一动作是对事件的响应。
+对象事件是 C#为每个对象设置的响应过程，如按钮对象就包括了 Click、KeyDown、
+KeyUp、KeyPress 等事件。当程序设计者使用事件时，IDE 已经为事件准备好了事件函数的
+框架，设计者只需完成具体的实现代码即可。
+2．事件驱动程序设计
+按设计要求编写控件事件驱动程序，执行程序时，触发控件执行事件驱动程序，完成规
+定任务的程序设计方法称为事件驱动程序设计。
+1.4 Visual Studio 2010 介绍
+Visual Studio 2010 是微软推出的应用于.NET 4.0 开发的首选工具，其功能强大而且方便
+易用，提供了在设计、开发、调试和部署应用程序时所需的工具。Visual C#集成开发环境
+（IDE）是 Visual Studio IDE 中的一种。打开 Visual Studio 2010 选择 C#即可进入 Visual C#集
+成开发环境，里面有些工具是与其他 Visual Studio 语言共享的，还有一些工具（如 C#编译
+器）是 Visual C#特有的。
+1.4.1 安装 Visual Studio 2010
+1．安装要求
+支持的操作系统：Windows Server 2003、Windows 7、Windows Vista、Windows XP。
+支持的数据库：Access 2000 或 SQL Server 2005 及以上版本。
+处理器：1.6GHz Pentium 处理器或与之相当的处理器（最低）。
+RAM：1024MB（最低）；如果在虚拟机上运行，则为 1.5 GB。
+硬盘：5400 r/min 硬盘。若不安装 MSDN，则安装驱动器上需要有 3GB 空间。
+显示器：1024×768 像素或更高的显示分辨率运行的支持 DirectX 9 的视频卡。
+DVD-ROM 驱动器。
+2．安装步骤
+Visual Studio 2010 的安装步骤非常简单，放入 Visual Studio.NET 2010 安装光盘后按提示
+进行安装即可，具体步骤如下。
+1）打开安装程序所在的目录，运行安装程序 Visual Studio 2010 \autorun.exe，弹出
+Visual Studio 2010 安装界面，选择［安装 Microsoft Visual Studio 2010］，如图 1-2 所示；
+7
+2）安装程序会自动加载安装组件；
+3）接受用户许可协议；
+4）选择［完全安装］或［自定义］，并设置好安装目录；
+5）安装程序开始安装各种组件，如图 1-3 所示；
+6）安装组件时会有一个重启过程。当所有组件安装完后，出现安装成功的界面。
+
+ 图 1-2 Visual Studio 2010 的安装界面 图 1-3 安装 Visual Studio 2010 的组件
+1.4.2 Visual Studio 2010 集成开发环境介绍
+选择“开始”→“所有程序”→“Microsoft Visual Studio 2010”命令，会显示如图 1-4
+所示的菜单。
+图 1-4 Microsoft Visual Studio 2010 菜单
+其中：
+“ Microsoft Windows SDK（简称 Windows SDK 或 SDK）Tools”是由微软公司出品的
+一个软件开发包，向在微软的 Windows 操作系统和.NET 框架上开发软件和网站的程序员提
+供头文件、库文件、示例代码、开发文档和开发工具。
+“Team Foundation Server（简称 TFS）Tools”提供了一个强健的系统，不仅提供了源码
+管理，而且包括了项目跟踪和开发支持，是对团队开发有着极大的帮助。
+“Visual Studio Tools”用于 Visual Studio .NET 开发的一些辅助工具，有一些工具是
+Visual Studio 系列开发工具一直都有的，如命令提示、远程调试器等。
+“Microsoft Visual Studio 2010”是 Microsoft Visual Studio 执行的快捷方式，单击可以进
+入 Microsoft Visual Studio 2010 开发环境。
+“Microsoft Visual Studio 2010 文档”是 Microsoft Visual Studio 2010 的帮助文档，提供应
+ 8
+用程序开发帮助信息。
+单击“Microsoft Visual Studio 2010”将进入 Microsoft Visual Studio 开发环境，然后单击
+“启动 Visual Studio”按钮即可进入开发界面。
+启动 Visual Studio 2010 后进入 Visual Studio 开发环境的“起始页”界面，如图 1-5 所
+示。第一次打开 Visual Studio 2010 会提示要求设置默认开发语言，本书选择“Visual C#开发
+设置”。

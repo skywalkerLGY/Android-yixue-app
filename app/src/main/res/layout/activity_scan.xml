@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--装扫描界面的控件
+    @layout/content_scan:为嵌入content_scan.xml的布局
+    -->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/dbv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_scanner_layout="@layout/content_scan">
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <!--闪光灯图片 自行找图片样式
+        @drawable/ic_flashlight_close 关闭时的图片
+    -->
+    <ImageButton
+        android:id="@+id/ib_flashlight_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/ic_flashlight_close"/>
+</RelativeLayout>

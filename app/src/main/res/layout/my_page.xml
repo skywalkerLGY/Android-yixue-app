@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.curriculum_design.My.VDrawerLayout
+        android:id="@+id/vd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/person_profile"/>
+        <include layout="@layout/headimg_profile"/>
+    </com.example.curriculum_design.My.VDrawerLayout>
+</LinearLayout>

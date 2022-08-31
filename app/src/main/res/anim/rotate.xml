@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360"/>
+
+
+
+<!--<rotate-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:duration="500"&lt;!&ndash; 设置旋转持续时间 &ndash;&gt;-->
+<!--    android:fromDegrees="0"-->
+<!--    android:interpolator="@android:anim/accelerate_interpolator"&lt;!&ndash; 设置旋转速度 &ndash;&gt;-->
+<!--    android:pivotX="50%"-->
+<!--    android:pivotY="50%"-->
+<!--    android:toDegrees="90" >&lt;!&ndash; 设置旋转角度 &ndash;&gt;-->
+<!--    </rotate>-->
