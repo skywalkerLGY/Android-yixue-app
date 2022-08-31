@@ -1,2 +1,5 @@
 # yixue-app
-data
+这款app能随时随地进行线上学习，拥有趣味性以及人性化的界面与功能设计，使得当代的学生学习更加便利，响应学生的在线教育需求。本系统使用的主要开发语言为Java，html5端开发语言为Vue.js，数据库使用了MySQL，整体架构是基于uni-app+原生Android的混合式开发项目，视频文章信息调用MOCK平台编写的接口，主要实现了考研与高考的在线教育学习平台，在线图书商城，文具商店，聊天系统，二手书回收系统，阅读图书以及学习社交分享圈等功能。
+This app enables online learning anytime, anywhere, with a fun and user-friendly interface and functional design, making it more convenient for contemporary students to learn and respond to their online education needs. The main development language used in this system is Java, the html5 end development language is Vue.js, the database uses MySQL, the overall architecture is based on uni-app + native Android hybrid development project, video article information call MOCK platform written interface, mainly to achieve the online education learning platform for examinations and entrance examinations, online bookstore, stationery It mainly implements the online education and learning platform for examinations and entrance examinations, online bookstore, stationery shop, chat system, second-hand book recycling system, reading books and learning social sharing circle and other functions.
+
+Translated with www.DeepL.com/Translator (free version)
